@@ -18,6 +18,8 @@
 
   home.packages = with pkgs; [
     nix-du
+    nixfmt-rfc-style
+    nix-du
     nix-tree
     graphviz
 
@@ -25,7 +27,6 @@
     cargo
     gnutar
     gzip
-    lua-language-server
 
   # Terminal fun
     lolcat
@@ -70,6 +71,7 @@
     tmux
     tmuxinator
     neovim
+    lunarvim
     tree-sitter
     man
     jq
@@ -88,6 +90,14 @@
   # Node
     nodejs
     nodePackages.neovim
+
+  # Lsp
+    pyright
+    lua-language-server
+    dockerfile-language-server-nodejs
+    nodePackages.typescript-language-server
+    nodePackages.bash-language-server
+
   ];
 
 }
